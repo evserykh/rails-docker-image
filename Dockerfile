@@ -1,1 +1,1 @@
-Dockerfile-ruby2.6
+./Dockerfile-ruby2.6
