@@ -44,5 +44,6 @@ RUN rm -rf /var/lib/apt/lists/*
 ##########################
 ########## REST ##########
 ##########################
-RUN gem install bundler
+RUN gem install bundler &&\
+    gem install bundler -v '~> 1.0'
 ADD inputrc /etc/inputrc
