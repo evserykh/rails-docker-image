@@ -1,4 +1,4 @@
-FROM ruby:2.6.3
+FROM ruby:2.6-buster
 
 ############################
 ########## LOCALE ##########
@@ -16,7 +16,7 @@ ENV LANG ${CONTAINER_LOCALE}.UTF-8
 ############################
 ########## NODEJS ##########
 ############################
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash - && \
     apt-get install -y --no-install-recommends nodejs
 
 ##########################
